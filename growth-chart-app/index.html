@@ -45,7 +45,6 @@
         <script src="js/charts/mini_charts.js"></script>
     </head>
     <body>
-
         <div id="header">
             <div class="header-inner">
                 <span id="mouse-coords" class="hide-on-prod"></span>
@@ -56,6 +55,15 @@
                                 <th class="patient-name-cell">
                                     <div class="icon icon-user"></div>
                                     <span class="patient-name title"></span>
+                                    <a onclick="window.close()" title="Back to Form" style="
+                                      margin-left: 14px;
+                                      color: #ccc;
+                                      font-size: 11px;
+                                      cursor: pointer;
+                                      text-decoration: none;
+                                      vertical-align: middle;
+                                      font-family: sans-serif;
+                                    ">← Back</a>
                                 </th>
                                 <td><span class="vertical-divider"></span></td>
                                 <td colspan="7">
@@ -135,10 +143,6 @@
                                 </td>
                                 <td colspan="2">
                                     <input type="button" data-translateattr="value=STR_3016" onClick="GC.App.aboutAppDialog()" />
-                                    <!--label>
-                                        <input type="checkbox" id="edit-enabled" checked="checked" />
-                                        Enable patient editing
-                                    </label-->
                                 </td>
                                 <td></td>
                                 <td></td>
@@ -156,7 +160,6 @@
                                 <input class="toggle-button" type="hidden" name="pctz" value="pct" data-value1="pct" data-value2="z" data-label1="%" data-label2="Z" />
                                 &nbsp;<span class="vertical-divider"></span>&nbsp;
                                 <span class="language-selector"></span>
-                                <!--input class="toggle-button" type="hidden" name="language" value="en" data-value1="en" data-value2="es" data-label1="English" data-label2="Spanish" /-->
                                 </td>
                                 <td align="right" data-translatecontent="STR_3018"></td>
                                 <td>
@@ -236,7 +239,6 @@
 
                 <!-- View Mode -->
                 <div id="view-mode">
-                    <!-- hide the parent tab -->
                     <span id="parent-tab" data-value="parent" data-translatecontent="STR_3042"></span>
                     <span data-value="table" data-translatecontent="STR_3043"></span>
                     <span data-value="graphs" data-translatecontent="STR_3044"></span>
@@ -298,7 +300,6 @@
             </div>
 
             <div id="info-bar" style="padding-right: 11em;overflow: hidden">
-
                 <span class="last-recording"> <span style="color: #AAA" data-translatecontent="STR_3052"></span> <b><span class="date"></span>&nbsp;&nbsp;<span class="age"></span></b> </span>
                 <span style="float:right;">
                     <span>
@@ -313,9 +314,7 @@
                         <input class="toggle-button" type="hidden" name="metrics" value="metric" data-value1="metric" data-value2="eng" data-label1="kg/cm" data-label2="lb/ft" />
                         <span class="vertical-divider"></span>
                     </span>
-                    <span class="language-selector">
-                        <!--input class="toggle-button" type="hidden" name="language" value="en" data-value1="en" data-value2="es" data-label1="English" data-label2="Spanish" /-->
-                    </span>
+                    <span class="language-selector"></span>
                 </span>
                 <span class="add-entry" data-translatecontent="STR_178"></span>
             </div>
