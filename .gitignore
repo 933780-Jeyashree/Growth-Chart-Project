@@ -21,3 +21,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# API
+**/appsettings.json
+**/appsettings.Development.json
